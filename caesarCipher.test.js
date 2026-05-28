@@ -7,3 +7,7 @@ test('No key', () => {
 test('Key change', () => {
     expect(caesarCipher('xyz', 3)).toBe('abc')
 });
+
+test('symbols', () => {
+    expect(caesarCipher(' /.(')).toBe(' /.(')
+})
