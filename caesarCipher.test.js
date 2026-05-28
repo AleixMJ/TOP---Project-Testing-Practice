@@ -9,5 +9,9 @@ test('Key change', () => {
 });
 
 test('symbols', () => {
-    expect(caesarCipher(' /.(')).toBe(' /.(')
+    expect(caesarCipher(' /.(', 5)).toBe(' /.(')
 })
+
+test('everything together', () =>
+    expect(caesarCipher('HeLLo, World!', 3)).toBe('KhOOr, Zruog!')
+)
